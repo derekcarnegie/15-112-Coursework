@@ -1,0 +1,73 @@
+check9.txt
+
+Edit this file and then submit it to autolab.
+
+Be sure to watch the videos very carefully, and not just
+skip ahead to the parts required to answer these questions!
+
+Be *very brief* in your answers!  Seriously.  Brief.
+
+---------------------------------------------------------------------
+
+1. Your full name and andrew id:Derek Li (derekl1)
+
+2. The full names and andrew ids of your groupmates, if you worked in a group.
+
+3. Dates/times that you watched the videos listed in check9.html (fill this out as you go):
+
+
+10/23 OOP 8:54 PM
+10/24 Recursion 1:22 AM
+
+4. Total time this check required (fill this out when you are done):
+
+2 hours
+
+5. Object-Oriented Programming Questions:
+
+5.1 What is the different between an instance and a class?
+
+An instance is a specific unit of a class while a class is a blueprint where objects are created.
+
+5.2 In the video about testing equality of objects, why did A(5) == 9 initially crash?
+
+This initially crashes since in the __eq__ function other.9 fails as the int object has no attribute other.
+
+5.3 Why doesn't our code crash when we call A('yellow', True), even though our __init__ function has three parameters?
+
+This is because the first parameter "self" is a reference to the instance that is being created. It ensures that the object has an attribute.
+
+5.4 Why should we write __repr__ instead of __str__ in most cases?
+
+We should write __repr__ instead of __str__ since it can be used in the exact same way as __str__ but will work when trying to print something within a list. It works for everything that is necessary within 112.
+
+5.5 Write a one-line __hash__ method for a class, Book, which has two variables, title and author.
+
+def __hash__(self):
+	return hash((title, author))
+
+6. Recursion:
+
+6.1 Pick an example from the 'Popular Recursion' section and explain why it is recursive.
+
+The dross effect is recursive since the original image is within the photo multiple times.
+
+6.2 Why do all (non-infinite) recursive functions need to have a base case?
+
+All non infinitive functions need a base case which is called within the own function so that there is a value to be evaluated.
+
+6.3 In 'Recursive Math', what's the functional difference between the function f5 and the function f7?
+
+The function f5 adds triangular numbers. The function f7 multiplies the numbers by 2 every time so that the function is exponential.
+
+6.4 Why is the base case for the recursive function power different from the base cases of rangeSum and listSum?
+
+The power function has a different base case since the original function is being multiplied while for the others they are being added.
+
+6.5 Add a print statement to the top of the basic rangeSum and the divide-and-conquer rangeSum, and count how many times each function is called on the same input. Describe what you observe and do your best to explain it.
+
+The function is called 7 times. This is because the function is called initially and then called for the rest of the numbers between the range. 
+
+6.6 Section 9 shows how functions can be implemented in both iterative and recursive ways. Of course, there can be multiple different iterative and recursive approaches to solve a problem. Describe two approaches, one iterative and one recursive, which you could use to solve the second example, reverse. These approaches should be different than the ones shown on the website.
+
+One way to recursively solve the problem would be to continuously call the function and calling the last index value of the string and adding it to a new string. The iterative way to solve the problem would be to iterate through the string from the right most part of the string and continuously add it to the original string.

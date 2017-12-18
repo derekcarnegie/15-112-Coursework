@@ -1,0 +1,12 @@
+Derek Li
+derekl1
+
+Andrew Rosenfeld's RoboGuitar Hero was very interesting since it utilized a complicated piece of hardware in his term project.
+
+Jessica Yin's Escape Room VR was astounding since she used multiple libraries to create a fully functional game. She obviously put a lot of effort in the term project and it seems like she reached the limit's of python's graphics capabilities. Furthermore, she provided much more than just the graphics as there was an actual story line in the game which was very impressive.
+
+Eric Lester's TSPY project was also very cool as this one was just code that ran on a computer and did not use any hardware. The program runs through every pixel in a picture and allows them to be changed with accuracy to a pixel which is a very cool program that definitely has real life applications.
+
+Lavonca Davis' Rise and Grind Term Project was very cool since I also play golf and her program could definitely be used by a typical golfer. I noticed the use of image recognition in her program which is something that I would like to try and use in my own program.
+
+Jake Rothschild's Poker Engine was very interesting since it did not showcase any crazy graphics or hardware but instead showed his algorithm that showed the optimal ways to play poker (which was the most impressive). The way the program showed off his algorithm was good and made it obvious that he had still put a lot of time into the project.

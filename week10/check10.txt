@@ -1,0 +1,82 @@
+check10.txt
+
+Edit this file and then submit it to autolab.
+
+Be sure to watch the videos very carefully, and not just
+skip ahead to the parts required to answer these questions!
+
+Be *very brief* in your answers!  Seriously.  Brief.
+
+---------------------------------------------------------------------
+
+1. Your full name and andrew id:
+Derek Li (derekl1)
+2. The full names and andrew ids of your groupmates, if you worked in a group.
+
+3. Dates/times that you watched the videos listed in check9.html (fill this out as you go):
+
+11/30: Exceptions 12:20 AM
+11/30: Functions Redux 11:00 PM
+11/31: Recursion 12:10 AM
+
+4. Total time this check required (fill this out when you are done):
+
+2 hours
+
+5. Exceptions
+
+5.1 Consider the lastChar(s) function given on the notes page.  Write a simple try/except block that calls lastChar('') without the program crashing.
+
+try:
+ 	print(lastChar('abc'))
+	print(lastChar(''))
+except:
+	print("This line will never run!")
+
+6. Functions Redux
+
+6.1 When using variable length args, why would you put a * in front of the argument when calling the function?
+
+The * in front of the argument when calling the function ensures that the parameter becomes a tuple and does not have something like a list within a tuple.
+
+6.2 What is the problem with using a mutable default argument?
+
+The problem with a mutable default argument is that the second argument can be altered even if only one value was passed to it because of the mutability.
+
+6.3 Look back at the animation framework used for this course.  Inside, we make use of lambda functions and functions as parameters.  Briefly describe how each is being used.
+
+Lambda functions are functions that are defined immediately and use. Lambda functions can be used as parameters.
+
+6.4 What is the differences between making use of *args and **kwargs?
+
+**kwargs packages what is passed to it as a dictionary instead of as a tuple which is what *args does.
+
+6.5 What is one reason you can think of to declare a function inside another function instead of making it global as we usually do?
+
+You could declare a function inside another function in order to create new specialized functions for whatever is passed in (like taking derivatives for different equations)
+
+6.7 Describe, in your own words, what a function decorator does.  What is the relationship between function decorators and functions that return functions?
+
+A function decorator is an @ symbol you can put in front of a function to change its behavior. It will send it to the function that returns functions. A decorator sends it there and requires that the function has the same number of parameters and returns a function.
+
+7. Recursion Part 2 Questions:
+
+7.1 Why would you need to expand the size of the stack?
+
+You would need to expand the size of the stack when maximum recursion depth is reached because the parameters that are passed to it are too large.
+
+7.2 Why is the memoized version of fib so much faster than the regular version?
+
+The memoized version of fib is much much faster since the previous values of the functions that are called are memorized. On the other hand, in the regular version when the 1 value is called all of the previous values have to be manually calculated which takes exponentially longer.
+
+7.3 Which advanced worked examples (from 1-5) was the most interesting to you?  Why?
+
+The powerset worked example was the most interesting to me since it showed how the simplest set of parameters is gone backwards from to solve the problem. 
+
+7.4 In your own words, describe what a fractal is.
+
+A fractal is a drawing that is created recursively meaning that it is the same base drawing multiple times in different orientations.
+
+7.5 What is another problem you can think of that you might be able to solve using backtracking?
+
+Another problem besides a maze that could be solved with backtracking could be cracking a lock/password and checking all of the combinations by brute force.
